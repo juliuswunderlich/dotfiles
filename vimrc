@@ -41,6 +41,9 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 Plugin 'airblade/vim-gitgutter'
 
+"Rainbow colored braces
+Plugin 'frazrepo/vim-rainbow'
+
 "open nerd tree on startup
 autocmd vimenter * NERDTree
 "toggle nerd tree
