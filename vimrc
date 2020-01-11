@@ -65,8 +65,11 @@ Plugin 'posva/vim-vue'
 Plugin 'hail2u/vim-css3-syntax'
 
 Plugin 'itchyny/lightline.vim'
+
 Plugin 'scrooloose/nerdtree'
+
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+
 Plugin 'airblade/vim-gitgutter'
 
 "open nerd tree on startup

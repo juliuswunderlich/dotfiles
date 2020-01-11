@@ -1,3 +1,4 @@
+
 export TERM="xterm-256color"
 
 source  ~/powerlevel9k/powerlevel9k.zsh-theme
@@ -10,7 +11,9 @@ alias ls='ls -G'
 ZSH_THEME="avit"
 
 
-
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+    tmux attach -t default || tmux new -s default
+fi
 
 export GOPATH=$HOME/Projects/go
 
