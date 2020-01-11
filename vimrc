@@ -43,6 +43,7 @@ Plugin 'airblade/vim-gitgutter'
 
 "Rainbow colored braces
 Plugin 'frazrepo/vim-rainbow'
+let g:rainbow_active = 1
 
 "open nerd tree on startup
 autocmd vimenter * NERDTree
