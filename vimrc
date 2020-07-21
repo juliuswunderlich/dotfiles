@@ -71,7 +71,7 @@ call vundle#end()            " required
 set nocompatible
 
 " Activate hybrid line numbers
-set nu rnu
+" set nu rnu
 
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
