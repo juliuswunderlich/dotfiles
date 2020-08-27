@@ -7,4 +7,7 @@ Currently:
 *   zsh
 
 ## Usage
-Download them, delete the old ones and add a '.' in front of the filename
+Download them, cd into the folder and use mv .<FILE> $HOME/.<FILE> 
+
+Careful! .vimrc contains a list of pathogen plugins. Remove them to get rid of
+the warning...
