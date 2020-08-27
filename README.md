@@ -5,9 +5,10 @@ Currently:
 *   Vim
 *   Tmux
 *   zsh
+*   ideavim (jetbrains products)
 
 ## Usage
 Download them, cd into the folder and use mv .<FILE> $HOME/.<FILE> 
 
-Careful! .vimrc contains a list of pathogen plugins. Remove them to get rid of
+Careful! .vimrc contains a list of pathogen plugins. Remove the list to get rid of
 the warning...
