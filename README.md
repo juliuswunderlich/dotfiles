@@ -6,6 +6,7 @@ Currently:
 *   Tmux
 *   zsh
 *   ideavim (jetbrains products)
+*   bash
 
 ## Usage
 Download them, cd into the folder and use mv .<FILE> $HOME/.<FILE> 
