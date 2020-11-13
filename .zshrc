@@ -100,6 +100,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+#
+
+alias ls="ls -G -lF -lF"
+
 export TERM="xterm-256color"
 
 
@@ -109,15 +113,14 @@ fi
 
 export GOPATH=$HOME/Projects/go
 
-alias ls='ls -G'
 
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
 ## Aliases
-#alias sem2="cd ~/Google_Drive/INF_Studium/2_Semester"
-#alias ezs="cd ~/Google_Drive/INF_Studium/2_Semester/Echtzeitsysteme"
-#alias dbp="cd ~/Google_Drive/INF_Studium/2_Semester/Datenbankprogrammierung"
-#alias sis="cd ~/Google_Drive/INF_Studium/2_Semester/Software-intensive-Systeme"
-#alias ehw="cd ~/Google_Drive/INF_Studium/2_Semester/Embedded-Hardware"
+alias sem2="cd ~/Google_Drive/INF_Studium/2_Semester"
+alias ezs="cd ~/Google_Drive/INF_Studium/2_Semester/Echtzeitsysteme"
+alias dbp="cd ~/Google_Drive/INF_Studium/2_Semester/Datenbankprogrammierung"
+alias sis="cd ~/Google_Drive/INF_Studium/2_Semester/Software-intensive-Systeme"
+alias ehw="cd ~/Google_Drive/INF_Studium/2_Semester/Embedded-Hardware"
