@@ -104,7 +104,10 @@ source $ZSH/oh-my-zsh.sh
 #
 #
 
-alias ls="ls --color=auto -lF"
+#for mac
+alias ls="ls -G -lF"
+#for linux
+#alias ls="ls --color=auto -lF"
 
 export TERM="xterm-256color"
 
