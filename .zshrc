@@ -1,15 +1,17 @@
-# If you come from bash you might have to change your $PATH.
+#
+#If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/juliuswunderlich/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="juanghurtado"
+#ZSH_THEME="robbyrussell"
 #ZSH_THEME="afowler"
 
 # Set list of themes to pick from when loading at random
@@ -102,7 +104,7 @@ source $ZSH/oh-my-zsh.sh
 #
 #
 
-alias ls="ls -G -lF -lF"
+alias ls="ls --color=auto -lF"
 
 export TERM="xterm-256color"
 
@@ -111,16 +113,9 @@ if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
     tmux attach -t default || tmux new -s default
 fi
 
-export GOPATH=$HOME/Projects/go
-
 
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
 ## Aliases
-alias sem2="cd ~/Google_Drive/INF_Studium/2_Semester"
-alias ezs="cd ~/Google_Drive/INF_Studium/2_Semester/Echtzeitsysteme"
-alias dbp="cd ~/Google_Drive/INF_Studium/2_Semester/Datenbankprogrammierung"
-alias sis="cd ~/Google_Drive/INF_Studium/2_Semester/Software-intensive-Systeme"
-alias ehw="cd ~/Google_Drive/INF_Studium/2_Semester/Embedded-Hardware"
