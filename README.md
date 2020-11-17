@@ -1,5 +1,7 @@
 # dotfiles
 All the relevant dot files, I customised over time.
+The files are customized for Linux and/or Mac.
+
 Currently:
 
 *   Vim
