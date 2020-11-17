@@ -1,5 +1,5 @@
 # dotfiles
-All the relevant dot files, I customised over time.
+All the relevant dot files, I customized over time.
 The files are customized for Linux and/or Mac.
 
 Currently:
