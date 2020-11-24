@@ -46,7 +46,7 @@ Plugin 'frazrepo/vim-rainbow'
 let g:rainbow_active = 1
 
 "open nerd tree on startup
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 "toggle nerd tree
 map <C-n> :NERDTreeToggle<CR>
 "fix weird ^G prefix
@@ -117,9 +117,17 @@ set ruler
 set encoding=utf-8
 
 " Whitespace
+" visually wraps line
 set wrap
+" breaks on whitespace instead of random character
+set linebreak
+" indents after linebreak to aid visibility
+set breakindent
+" adds char to also visually aid linebreak
+set showbreak=ͱ
+
 set autoindent
-set textwidth=79
+"set textwidth=79
 set formatoptions=tcqrn1
 " tab and space size
 set tabstop=2
