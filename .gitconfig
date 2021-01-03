@@ -7,3 +7,8 @@
 	process = git-lfs filter-process
 [alias]
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
+[user]
+	email = julius.wunderlich@student.uni-augsburg.de
+	name = Julius Wunderlich
+[diff]
+  tool = vimdiff
