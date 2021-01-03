@@ -33,6 +33,9 @@ Plugin 'posva/vim-vue'
 "for css3 highlighting
 Plugin 'hail2u/vim-css3-syntax'
 
+"For c# auto completion
+Bundle 'OmniSharp/omnisharp-vim'
+
 Plugin 'itchyny/lightline.vim'
 
 Plugin 'scrooloose/nerdtree'
