@@ -110,6 +110,9 @@ set number
 " Make line numbers grey
 highlight LineNr ctermfg=grey
 
+" Show current cursor position
+set cursorline
+
 " Show file stats
 set ruler
 
