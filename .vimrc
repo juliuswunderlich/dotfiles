@@ -136,9 +136,9 @@ set autoindent
 "set textwidth=79
 set formatoptions=tcqrn1
 " tab and space size
-set tabstop=2
+set tabstop=4
 " indentation length when > is used
-set shiftwidth=2
+set shiftwidth=4
 " set expandtab converts tabs into spaces, noexpandtab would do the opposite
 set expandtab
 
