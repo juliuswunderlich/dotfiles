@@ -109,9 +109,9 @@ alias lsp="ls *.pdf"
 export TERM="xterm-256color"
 
 
-if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-    tmux attach -t default || tmux new -s default
-fi
+#if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+#    tmux attach -t default || tmux new -s default
+#fi
 
 export GOPATH=$HOME/Projects/go
 
@@ -125,4 +125,10 @@ alias sem2="cd ~/Google_Drive/Master_INF_Studium/2_Semester"
 alias ezs="cd ~/Google_Drive/Master_INF_Studium/2_Semester/Echtzeitsysteme"
 alias dbp="cd ~/Google_Drive/Master_INF_Studium/2_Semester/Datenbankprogrammierung"
 alias sis="cd ~/Google_Drive/Master_INF_Studium/2_Semester/Software-intensive-Systeme"
+alias kolla="cd ~/Google_Drive/Master_INF_Studium/2_Semester/Kollaborative-Robotik"
 alias ehw="cd ~/Google_Drive/Master_INF_Studium/2_Semester/Embedded-Hardware"
+alias adv="cd ~/projects/adventofcode2020/"
+
+# create a latex homework file
+alias homework="cp ~/Documents/LatexTemplates/homework_temp.tex ./new_homework.tex"
+
