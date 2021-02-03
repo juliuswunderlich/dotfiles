@@ -121,6 +121,12 @@ export GOPATH=$HOME/Projects/go
 # CASE_SENSITIVE="true"
 
 ## Aliases
+#---------------------------------
+
+# for instructions
+alias dt="git difftool"
+
+# For paths
 alias sem2="cd ~/Google_Drive/Master_INF_Studium/2_Semester"
 alias ezs="cd ~/Google_Drive/Master_INF_Studium/2_Semester/Echtzeitsysteme"
 alias dbp="cd ~/Google_Drive/Master_INF_Studium/2_Semester/Datenbankprogrammierung"
