@@ -38,9 +38,9 @@ Bundle 'OmniSharp/omnisharp-vim'
 
 Plugin 'itchyny/lightline.vim'
 
-Plugin 'scrooloose/nerdtree'
+"Plugin 'scrooloose/nerdtree'
 
-Plugin 'Xuyuanp/nerdtree-git-plugin'
+"Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 Plugin 'airblade/vim-gitgutter'
 
@@ -51,15 +51,15 @@ let g:rainbow_active = 1
 "open nerd tree on startup
 "autocmd vimenter * NERDTree
 "toggle nerd tree
-map <C-n> :NERDTreeToggle<CR>
+"map <C-n> :NERDTreeToggle<CR>
 "fix weird ^G prefix
-let g:NERDTreeNodeDelimiter = "\u00a0"
+"let g:NERDTreeNodeDelimiter = "\u00a0"
 
 "change nerd tree arrows
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
+"let g:NERDTreeDirArrowExpandable = '▸'
+"let g:NERDTreeDirArrowCollapsible = '▾'
 "move to file on startup
-au VimEnter * wincmd l
+"au VimEnter * wincmd l
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -111,7 +111,7 @@ set number
 highlight LineNr ctermfg=grey
 
 " Show current cursor position
-set cursorline
+" set cursorline
 
 " Show file stats
 set ruler
