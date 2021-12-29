@@ -1,73 +1,4 @@
 " --------------------------------------------------------
-"  VUNDLE Plugins
-" --------------------------------------------------------
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-"Plugin for previewing latex
-Plugin 'xuhdev/vim-latex-live-preview'
-"set the default previewer for latex
-let g:livepreview_previewer = 'open -a Preview'
-"make it update faster
-autocmd Filetype tex setl updatetime=1000
-
-"Plugin for auto completion as you type
-Plugin 'Valloric/YouCompleteMe'
-
-"plugin for autoclosing brackets, quotens, parens
-Plugin 'Raimondi/delimitMate'
-
-"plugin for improved es6 highlighting
-Plugin 'isRuslan/vim-es6'
-
-"plugin for better javascript highlighting
-Plugin 'pangloss/vim-javascript'
-
-"plugin for vue.js highlighting
-Plugin 'posva/vim-vue'
-
-"for css3 highlighting
-Plugin 'hail2u/vim-css3-syntax'
-
-"For c# auto completion
-Bundle 'OmniSharp/omnisharp-vim'
-
-Plugin 'itchyny/lightline.vim'
-
-"Plugin 'scrooloose/nerdtree'
-
-"Plugin 'Xuyuanp/nerdtree-git-plugin'
-
-Plugin 'airblade/vim-gitgutter'
-
-"Rainbow colored braces
-Plugin 'frazrepo/vim-rainbow'
-let g:rainbow_active = 1
-
-"open nerd tree on startup
-"autocmd vimenter * NERDTree
-"toggle nerd tree
-"map <C-n> :NERDTreeToggle<CR>
-"fix weird ^G prefix
-"let g:NERDTreeNodeDelimiter = "\u00a0"
-
-"change nerd tree arrows
-"let g:NERDTreeDirArrowExpandable = '▸'
-"let g:NERDTreeDirArrowCollapsible = '▾'
-"move to file on startup
-"au VimEnter * wincmd l
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-
-" --------------------------------------------------------
-
-
-" --------------------------------------------------------
 "  VIM Settings
 " --------------------------------------------------------
 " Don't try to be vi compatible
@@ -245,10 +176,12 @@ let g:solarized_termtrans=1
 " in ~/.vim/colors/ and uncomment:
 " colorscheme solarized
 
+" color scheme (colorscheme)
+colorscheme desert
+
 "-------------------------------
 "custom commands
 "-------------------------------
 
-" compiles the current latex file
+" compiles and writes the current latex file
 :command Wl w <bar> !pdflatex % 
-
