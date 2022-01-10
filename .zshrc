@@ -122,6 +122,7 @@ export GOPATH=$HOME/Projects/go
 
 ## Aliases
 #---------------------------------
+alias scpng="scp -r nvidia@192.168.178.80:~/smds-uniautonom-jetson-src/Python_ExtIf_Server/src/exports/ /$HOME/Downloads/"
 
 # for instructions
 alias dt="git difftool"
