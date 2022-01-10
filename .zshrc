@@ -125,6 +125,7 @@ export GOPATH=$HOME/Projects/go
 
 # for instructions
 alias dt="git difftool"
+alias mt="git mergetool --tool=vimdiff -y"
 
 # For paths
 alias sem2="cd ~/Google_Drive/Master_INF_Studium/2_Semester"
