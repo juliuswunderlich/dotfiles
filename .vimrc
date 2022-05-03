@@ -116,6 +116,12 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+"Remap resizing of panes to + and - only
+if bufwinnr(1)
+  map + <C-W>+
+  map - <C-W>-
+endif    
+
 " Make fj do esc
 inoremap fj <Esc>
 " Make it work on visual mode as well
