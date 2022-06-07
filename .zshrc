@@ -103,7 +103,7 @@ source $ZSH/oh-my-zsh.sh
 #
 #
 
-alias ls="ls -G -lF -lF"
+alias ls="ls -G -lF -lF --color"
 alias lsp="ls *.pdf"
 
 export TERM="xterm-256color"
