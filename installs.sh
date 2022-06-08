@@ -18,6 +18,11 @@ fi
 # -----------------------------------------------------------------------
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# install cli utilities
+sudo apt install ack
+sudo apt install fd-find
+sudo apt install trash-cli
+
 
 # check current location
 if [ "$PWD" = "$HOME/dotfiles"]; then
