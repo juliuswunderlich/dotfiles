@@ -127,6 +127,7 @@ alias scpng="scp -r nvidia@192.168.178.80:~/smds-uniautonom-jetson-src/Python_Ex
 # for instructions
 alias dt="git difftool"
 alias mt="git mergetool --tool=vimdiff -y"
+alias fd="fdfind"
 
 # For paths
 alias sem2="cd ~/Google_Drive/Master_INF_Studium/2_Semester"
