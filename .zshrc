@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="/Users/juliuswunderlich/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -103,7 +103,7 @@ source $ZSH/oh-my-zsh.sh
 #
 #
 
-alias ls="ls -G -lF -lF --color"
+alias ls="ls -G -lF -lF"
 alias lsp="ls *.pdf"
 
 export TERM="xterm-256color"
@@ -122,21 +122,20 @@ export GOPATH=$HOME/Projects/go
 
 ## Aliases
 #---------------------------------
-alias scpng="scp -r nvidia@192.168.178.80:~/smds-uniautonom-jetson-src/Python_ExtIf_Server/src/exports/ /$HOME/Downloads/"
+alias jetsonIck="ssh xitaso@192.168.178.110"
+alias jetsonMuc="ssh xitaso@192.168.178.54"
+
+# lists all devices in the network
+alias ifdev="sudo arp-scan --localnet"
 
 # for instructions
 alias dt="git difftool"
-alias mt="git mergetool --tool=vimdiff -y"
-alias fd="fdfind"
+
+# for advent of code
+alias adv="cd ~/projects/adventofcode2021"
 
 # For paths
-alias sem2="cd ~/Google_Drive/Master_INF_Studium/2_Semester"
-alias ezs="cd ~/Google_Drive/Master_INF_Studium/2_Semester/Echtzeitsysteme"
-alias dbp="cd ~/Google_Drive/Master_INF_Studium/2_Semester/Datenbankprogrammierung"
-alias sis="cd ~/Google_Drive/Master_INF_Studium/2_Semester/Software-intensive-Systeme"
-alias kolla="cd ~/Google_Drive/Master_INF_Studium/2_Semester/Kollaborative-Robotik"
-alias ehw="cd ~/Google_Drive/Master_INF_Studium/2_Semester/Embedded-Hardware"
-alias adv="cd ~/projects/adventofcode2020/"
+alias sem3="cd ~/Google_Drive/Master_INF_Studium/3_Semester"
 
 # create a latex homework file
 alias homework="cp ~/Documents/LatexTemplates/homework_temp.tex ./new_homework.tex"
