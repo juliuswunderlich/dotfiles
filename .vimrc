@@ -4,6 +4,24 @@
 " Don't try to be vi compatible
 set nocompatible
 
+" Installs Plug plugin manager
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin()
+
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'davidhalter/jedi-vim'
+Plug 'raimondi/delimitmate'
+
+call plug#end()
+
+
+
 " Activate hybrid line numbers
 " set nu rnu
 
