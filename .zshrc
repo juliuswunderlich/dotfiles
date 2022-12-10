@@ -140,3 +140,8 @@ alias sem3="cd ~/Google_Drive/Master_INF_Studium/3_Semester"
 # create a latex homework file
 alias homework="cp ~/Documents/LatexTemplates/homework_temp.tex ./new_homework.tex"
 
+alias settings="env XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
+# use lang de or lang us
+alias lang="setxbmap"
+
+
