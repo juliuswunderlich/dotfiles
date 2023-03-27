@@ -122,8 +122,6 @@ export GOPATH=$HOME/Projects/go
 
 ## Aliases
 #---------------------------------
-alias jetsonIck="ssh xitaso@192.168.178.110"
-alias jetsonMuc="ssh xitaso@192.168.178.54"
 
 # lists all devices in the network
 alias ifdev="sudo arp-scan --localnet"
