@@ -10,6 +10,12 @@
     "editor.guides.bracketPairs": true,
 
     "workbench.list.automaticKeyboardNavigation": false,
+    
+    "vim.handleKeys": {
+        "<C-f>": false,
+        "<C-a>": false,
+        "<C-c>": false,
+    },
 
     "vim.normalModeKeyBindingsNonRecursive": [
         {
