@@ -126,6 +126,9 @@ export GOPATH=$HOME/Projects/go
 # lists all devices in the network
 alias ifdev="sudo arp-scan --localnet"
 
+# but as cat alternative
+alias bat="batcat"
+
 # for instructions
 alias dt="git difftool"
 
