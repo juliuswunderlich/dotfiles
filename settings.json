@@ -211,6 +211,7 @@
     "editor.minimap.maxColumn": 60,
     "editor.minimap.size": "fit",
     "diffEditor.codeLens": true,
+    "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
     "extensions.ignoreRecommendations": true,
     "go.toolsManagement.autoUpdate": true,
     "editor.fontFamily": "'Ubuntu Mono'",
