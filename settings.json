@@ -1,277 +1,259 @@
 {
-    "editor.rulers": [80],
+  "editor.rulers": [80],
 
-    "workbench.colorCustomizations": {
-        "editorWhitespace.foreground": "#ffffff17",
+  "workbench.colorCustomizations": {
+    "editorWhitespace.foreground": "#ffffff17"
+  },
+
+  "editor.tabCompletion": "on",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+
+  "workbench.list.automaticKeyboardNavigation": false,
+
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["g", "p", "d"],
+      "commands": ["editor.action.peekDefinition"]
     },
-
-    "editor.tabCompletion": "on",
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": true,
-
-    "workbench.list.automaticKeyboardNavigation": false,
-    
-    "vim.handleKeys": {
-        "<C-f>": false,
-        "<C-c>": false,
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
     },
-
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": ["j"],
-            "after": ["g", "j"]
-        },
-        {
-            "before": ["k"],
-            "after": ["g", "k"]
-        },
-        {
-              "before": ["g", "p", "d"],
-              "commands": ["editor.action.peekDefinition"]
-        },
-        {
-          "before": ["g", "h"],
-          "commands": ["editor.action.showDefinitionPreviewHover"]
-        },
-        {
-          "before": ["g", "i"],
-          "commands": ["editor.action.goToImplementation"]
-        },
-        {
-          "before": ["g", "p", "i"],
-          "commands": ["editor.action.peekImplementation"]
-        },
-        {
-          "before": ["g", "q"],
-          "commands": ["editor.action.quickFix"]
-        },
-        {
-          "before": ["g", "r"],
-          "commands": ["editor.action.referenceSearch.trigger"]
-        },
-        {
-          "before": ["g", "t"],
-          "commands": ["editor.action.goToTypeDefinition"]
-        },
-        {
-          "before": ["g", "p", "t"],
-          "commands": ["editor.action.peekTypeDefinition"]
-        }
-    ],
-
-    "vim.insertModeKeyBindingsNonRecursive": [
-        {
-            "before": ["f", "j"],
-            "after": ["<Esc>"]
-        },
-    ],
-    "vim.insertModeKeyBindings": [ 
-        {
-            "before": ["f", "j"],
-            "after": ["<Esc>"]
-        },
-    ],
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                ">"
-            ],
-            "commands": [
-                "editor.action.indentLines"
-            ]
-        },
-        {
-            "before": [
-                "<"
-            ],
-            "commands": [
-                "editor.action.outdentLines"
-            ]
-        },
-    ],
-
-    "vim.visualModeKeyBindings": [
-        {
-            "before": ["f", "j"],
-            "after": ["<Esc>"]
-        },
-    ],
-
-    "latex-workshop.latex.recipes": [
-        {
-            "name": "(new) xelatex -> biber -> xelatex*2",
-            "tools": [
-                "xelatex",
-                "biber",
-                "xelatex",
-                "xelatex"
-            ]
-        },
-        {
-            "name": "(old) xelatex -> bibtex -> xelatex*2",
-            "tools": [
-                "xelatex",
-                "bibtex",
-                "xelatex",
-                "xelatex"
-            ]
-        },
-    ],
-
-    "latex-workshop.latex.tools": [
-        {
-            "name": "pdflatex",
-            "command": "pdflatex",
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "%DOC%"
-            ]
-        },
-        {
-            "name": "bibtex",
-            "command": "bibtex",
-            "args": [
-                "%DOCFILE%"
-            ]
-        },
-        {
-            "name": "biber",
-            "command": "biber",
-            "args": [
-                "%DOCFILE%"
-            ]
-        },
-        {
-            "name": "xelatex",
-            "command": "xelatex",
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "%DOC%"
-            ]
-        }
-    
-    ],
-
-    "clock.dateFormat": "HH:MM:ss",
-    "html.mirrorCursorOnMatchingTag": false,
-    "editor.renderControlCharacters": true,
-    "editor.renderWhitespace": "all",
-    "editor.fontSize": 15,
-    "terminal.integrated.fontSize": 15,
-    "workbench.statusBar.feedback.visible": false,
-    "git.confirmSync": false,
-    "workbench.list.horizontalScrolling": true,
-    "java.errors.incompleteClasspath.severity": "ignore",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "disabled",
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
     },
-    "editor.minimap.renderCharacters": false,
-    "editor.minimap.showSlider": "always",
-    "git.enableSmartCommit": true,
-    "python.jediEnabled": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "explorer.confirmDragAndDrop": false,
-    "latex-workshop.view.pdf.viewer": "browser",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "liveshare.featureSet": "insiders",
-    "spellright.language": [
-        "de"
-    ],
-    "spellright.documentTypes": [
-        "markdown",
-        "latex"
-    ],
-    "auto-close-tag.activationOnLanguage": [
-
-
-        "xml",
-        "php",
-        "blade",
-        "ejs",
-        "jinja",
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "plaintext",
-        "markdown",
-        "vue",
-        "liquid",
-        "erb",
-        "lang-cfml",
-        "cfml",
-        "HTML (EEx)",
-        "HTML (Eex)",
-        "plist"
-    ],
-    "vim.commandLineModeKeyBindingsNonRecursive": [
-    
-    ],
-    "workbench.preferredDarkColorTheme": "Shades of Purple",
-    "python.languageServer": "Pylance",
-    "workbench.editorAssociations": {
-        "*.pdf": "default",
-        "*.ipynb": "jupyter-notebook"
+    {
+      "before": ["g", "p", "i"],
+      "commands": ["editor.action.peekImplementation"]
     },
-    "terminal.external.osxExec": "iTerm",
-    "terminal.integrated.cursorBlinking": true,
-    "editor.fontLigatures": false,
-    "launch": {
-
-
-        "configurations": [],
-        "compounds": []
+    {
+      "before": ["g", "q"],
+      "commands": ["editor.action.quickFix"]
     },
-    "jupyter.alwaysTrustNotebooks": true,
-    "terminal.integrated.shell.osx": "/bin/zsh",
-    "editor.accessibilitySupport": "off",
-    "extensions.autoUpdate": false,
-    "latex-workshop.message.update.show": false,
-    "omnisharp.useGlobalMono": "always",
-    "workbench.preferredLightColorTheme": "Visual Studio Light",
-    "editor.minimap.maxColumn": 60,
-    "editor.minimap.size": "fit",
-    "diffEditor.codeLens": true,
-    "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
-    "extensions.ignoreRecommendations": true,
-    "go.toolsManagement.autoUpdate": true,
-    "editor.fontFamily": "'Ubuntu Mono'",
-    "todo-tree.general.tags": [
-        "BUG",
-        "HACK",
-        "FIXME",
-        "TODO",
-        "XXX",
-        "[ ]",
-        "[x]"
-    ],
-    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-    "workbench.editor.untitled.hint": "hidden",
-    "jupyter.askForKernelRestart": false,
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+t   },
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
     },
-    "jupyter.jupyterServerType": "local",
-    "security.workspace.trust.untrustedFiles": "open",
-    "editor.cursorBlinking": "smooth",
-    "editor.cursorSmoothCaretAnimation": true,
-    "workbench.colorTheme": "GitHub Dark Default",
-    "workbench.sideBar.location": "right",
-    "window.zoomLevel": 1,
-    "bracket-pair-colorizer-2.depreciation-notice": false,
-    "powermode.enabled": true,
-    "powermode.comboThreshold": 10,
-    "editor.guides.indentation": true,
+    {
+      "before": ["g", "p", "t"],
+      "commands": ["editor.action.peekTypeDefinition"]
+    }
+  ],
+
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["g", "k"]
+    }
+  ],
+
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["f", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["f", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["f", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk 🔃",
+      "tools": ["latexmk"]
+    }
+  ],
+
+  "latex-workshop.latex.tools": [
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "bibtex",
+      "command": "bibtex",
+      "args": ["%DOCFILE%"]
+    },
+    {
+      "name": "biber",
+      "command": "biber",
+      "args": ["%DOCFILE%"]
+    },
+    {
+      "name": "xelatex",
+      "command": "xelatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "--shell-escape",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ]
+    }
+  ],
+
+  "clock.dateFormat": "HH:MM:ss",
+  "html.mirrorCursorOnMatchingTag": false,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "all",
+  "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
+  "editor.fontSize": 15,
+  "terminal.integrated.fontSize": 15,
+  "workbench.statusBar.feedback.visible": false,
+  "git.confirmSync": false,
+  "workbench.list.horizontalScrolling": true,
+  "java.errors.incompleteClasspath.severity": "ignore",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "disabled",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.showSlider": "always",
+  "git.enableSmartCommit": true,
+  "python.jediEnabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "explorer.confirmDragAndDrop": false,
+  "latex-workshop.view.pdf.viewer": "browser",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "liveshare.featureSet": "insiders",
+  "spellright.language": ["de"],
+  "spellright.documentTypes": ["markdown", "latex"],
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (EEx)",
+    "HTML (Eex)",
+    "plist"
+  ],
+  "vim.commandLineModeKeyBindingsNonRecursive": [],
+  "workbench.preferredDarkColorTheme": "Shades of Purple",
+  "python.languageServer": "Pylance",
+  "workbench.editorAssociations": {
+    "*.pdf": "default",
+    "*.ipynb": "jupyter-notebook"
+  },
+  "terminal.integrated.cursorBlinking": true,
+  "editor.fontLigatures": false,
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+  "jupyter.alwaysTrustNotebooks": true,
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "editor.accessibilitySupport": "off",
+  "extensions.autoUpdate": false,
+  "latex-workshop.message.update.show": false,
+  "omnisharp.useGlobalMono": "always",
+  "workbench.preferredLightColorTheme": "Visual Studio Light",
+  "editor.minimap.maxColumn": 60,
+  "editor.minimap.size": "fit",
+  "diffEditor.codeLens": true,
+  "extensions.ignoreRecommendations": true,
+  "go.toolsManagement.autoUpdate": true,
+  "editor.fontFamily": "'JetBrains Mono'",
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "jupyter.askForKernelRestart": false,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "jupyter.jupyterServerType": "local",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "powermode.enabled": true,
+  "powermode.comboThreshold": 10,
+  "editor.guides.indentation": true,
+  "indentRainbow.indicatorStyle": "light",
+  "notebook.lineNumbers": "on",
+  "explorer.confirmDelete": false,
+  "git.openRepositoryInParentFolders": "never",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "files.autoSave": "afterDelay",
+  "workbench.colorTheme": "Ayu Light",
+  "workbench.editor.empty.hint": "hidden",
+  "editor.smoothScrolling": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }
