@@ -9,8 +9,6 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
 
-  "workbench.list.automaticKeyboardNavigation": false,
-
   "vim.normalModeKeyBindings": [
     {
       "before": ["g", "p", "d"],
@@ -35,7 +33,7 @@
     {
       "before": ["g", "r"],
       "commands": ["editor.action.referenceSearch.trigger"]
-t   },
+    },
     {
       "before": ["g", "t"],
       "commands": ["editor.action.goToTypeDefinition"]
@@ -56,6 +54,10 @@ t   },
       "after": ["g", "k"]
     }
   ],
+
+  "vim.handleKeys": {
+    "<C-p>": false
+  },
 
   "vim.insertModeKeyBindingsNonRecursive": [
     {
@@ -163,7 +165,6 @@ t   },
   "editor.minimap.showSlider": "always",
   "git.enableSmartCommit": true,
   "python.jediEnabled": false,
-  "workbench.iconTheme": "material-icon-theme",
   "explorer.confirmDragAndDrop": false,
   "latex-workshop.view.pdf.viewer": "browser",
   "workbench.startupEditor": "newUntitledFile",
@@ -250,7 +251,7 @@ t   },
     "editor.formatOnType": true
   },
   "files.autoSave": "afterDelay",
-  "workbench.colorTheme": "Ayu Light",
+  "workbench.colorTheme": "Andromeda",
   "workbench.editor.empty.hint": "hidden",
   "editor.smoothScrolling": true,
   "[typescriptreact]": {
